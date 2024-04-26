@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:hint="Name" />
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="358dp"
+        android:layout_height="78dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:hint="Date of Birth"
+        android:inputType="date" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/contactPreferenceRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/phoneRadioButton"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Phone" />
+
+        <RadioButton
+            android:id="@+id/emailRadioButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <RadioButton
+            android:id="@+id/bothRadioButton"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="Both" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/interestsSpinner"
+        android:layout_width="384dp"
+        android:layout_height="74dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+</LinearLayout>
